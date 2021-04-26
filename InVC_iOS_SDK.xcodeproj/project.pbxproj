@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C2E9F72B2636D1E000F9A082 /* InVC_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB9CF85071994BAFF6D2A85F /* Pods_InVC_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A9354E115F05EE0F67AA17 /* Pods_InVC_iOS_SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVC_iOS_SDK.debug.xcconfig"; path = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9F7262636D1E000F9A082 /* InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InVC_iOS_SDK.h; sourceTree = "<group>"; };
 		C2E9F72A2636D1E000F9A082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4A9354E115F05EE0F67AA17 /* Pods_InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVC_iOS_SDK.release.xcconfig"; path = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +25,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9CF85071994BAFF6D2A85F /* Pods_InVC_iOS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE5EFDB87D1ECB8F0FED28CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A9354E115F05EE0F67AA17 /* Pods_InVC_iOS_SDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2E9F71C2636D1E000F9A082 = {
 			isa = PBXGroup;
 			children = (
 				C2E9F7282636D1E000F9A082 /* InVC_iOS_SDK */,
 				C2E9F7272636D1E000F9A082 /* Products */,
+				E2C64037370AF0A3D3D2AD0F /* Pods */,
+				AE5EFDB87D1ECB8F0FED28CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +67,16 @@
 			path = InVC_iOS_SDK;
 			sourceTree = "<group>";
 		};
+		E2C64037370AF0A3D3D2AD0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */,
+				FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2E9F72E2636D1E000F9A082 /* Build configuration list for PBXNativeTarget "InVC_iOS_SDK" */;
 			buildPhases = (
+				BB14AAD271C220E8FF3441B8 /* [CP] Check Pods Manifest.lock */,
 				C2E9F7212636D1E000F9A082 /* Headers */,
 				C2E9F7222636D1E000F9A082 /* Sources */,
 				C2E9F7232636D1E000F9A082 /* Frameworks */,
@@ -124,6 +150,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB14AAD271C220E8FF3441B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InVC_iOS_SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2E9F7222636D1E000F9A082 /* Sources */ = {
@@ -260,6 +311,7 @@
 		};
 		C2E9F72F2636D1E000F9A082 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -284,6 +336,7 @@
 		};
 		C2E9F7302636D1E000F9A082 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
