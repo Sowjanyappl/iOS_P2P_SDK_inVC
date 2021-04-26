@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C2E9F72B2636D1E000F9A082 /* InVC_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E9F7452636EB1100F9A082 /* RTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7402636EB1100F9A082 /* RTCClient.swift */; };
+		C2E9F7462636EB1100F9A082 /* RTCSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7412636EB1100F9A082 /* RTCSettingsStore.swift */; };
+		C2E9F7472636EB1100F9A082 /* RTCCapturerSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7422636EB1100F9A082 /* RTCCapturerSettingsModel.swift */; };
+		C2E9F7482636EB1100F9A082 /* RTCCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7432636EB1100F9A082 /* RTCCapturer.swift */; };
+		C2E9F7492636EB1100F9A082 /* AVCaptureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7442636EB1100F9A082 /* AVCaptureState.swift */; };
 		EB9CF85071994BAFF6D2A85F /* Pods_InVC_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A9354E115F05EE0F67AA17 /* Pods_InVC_iOS_SDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +21,11 @@
 		C2E9F7262636D1E000F9A082 /* InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InVC_iOS_SDK.h; sourceTree = "<group>"; };
 		C2E9F72A2636D1E000F9A082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E9F7402636EB1100F9A082 /* RTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCClient.swift; sourceTree = "<group>"; };
+		C2E9F7412636EB1100F9A082 /* RTCSettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCSettingsStore.swift; sourceTree = "<group>"; };
+		C2E9F7422636EB1100F9A082 /* RTCCapturerSettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCCapturerSettingsModel.swift; sourceTree = "<group>"; };
+		C2E9F7432636EB1100F9A082 /* RTCCapturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCCapturer.swift; sourceTree = "<group>"; };
+		C2E9F7442636EB1100F9A082 /* AVCaptureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureState.swift; sourceTree = "<group>"; };
 		E4A9354E115F05EE0F67AA17 /* Pods_InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVC_iOS_SDK.release.xcconfig"; path = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,11 @@
 			isa = PBXGroup;
 			children = (
 				C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */,
+				C2E9F7442636EB1100F9A082 /* AVCaptureState.swift */,
+				C2E9F7432636EB1100F9A082 /* RTCCapturer.swift */,
+				C2E9F7422636EB1100F9A082 /* RTCCapturerSettingsModel.swift */,
+				C2E9F7402636EB1100F9A082 /* RTCClient.swift */,
+				C2E9F7412636EB1100F9A082 /* RTCSettingsStore.swift */,
 				C2E9F72A2636D1E000F9A082 /* Info.plist */,
 			);
 			path = InVC_iOS_SDK;
@@ -73,7 +88,6 @@
 				90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */,
 				FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +134,7 @@
 				TargetAttributes = {
 					C2E9F7252636D1E000F9A082 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -181,6 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E9F7472636EB1100F9A082 /* RTCCapturerSettingsModel.swift in Sources */,
+				C2E9F7462636EB1100F9A082 /* RTCSettingsStore.swift in Sources */,
+				C2E9F7492636EB1100F9A082 /* AVCaptureState.swift in Sources */,
+				C2E9F7452636EB1100F9A082 /* RTCClient.swift in Sources */,
+				C2E9F7482636EB1100F9A082 /* RTCCapturer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NN4FAH5SZT;
@@ -329,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peoplelink.InVC-iOS-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDC69166FD2AB8EDEBEAF050 /* Pods-InVC_iOS_SDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NN4FAH5SZT;
