@@ -52,6 +52,7 @@ public class RTCClient: NSObject {
     fileprivate var audioTrack: RTCAudioTrack? // Save instance to be able to mute the call
     fileprivate var remoteIceCandidates: [RTCIceCandidate] = []
     fileprivate var isVideoCall = true
+    fileprivate var videoTrack: RTCVideoTrack? // Save instance to be able to mute the call
 
     public weak var delegate: RTCClientDelegate?
     fileprivate let defaultConnectionConstraint = RTCMediaConstraints(mandatoryConstraints: nil, optionalConstraints: ["DtlsSrtpKeyAgreement": "true"])
@@ -94,6 +95,7 @@ public class RTCClient: NSObject {
         }
         if let stream = peerConnection.localStreams.first {
             audioTrack = nil
+            videoTrack = nil
             peerConnection.remove(stream)
         }
     }
@@ -122,6 +124,7 @@ public class RTCClient: NSObject {
         peerConnection.close()
         if let stream = peerConnection.localStreams.first {
             audioTrack = nil
+            videoTrack = nil
             peerConnection.remove(stream)
         }
         self.delegate?.rtcClient(client: self, didChangeState: .disconnected)
@@ -202,6 +205,16 @@ public class RTCClient: NSObject {
 
     public func muteCall(_ mute: Bool) {
         self.audioTrack?.isEnabled = !mute
+        
+
+    }
+    public func muteVideoCall(_ mute: Bool){
+//        let localStream = self.localStream()
+//        if let localVideoTrack = localStream.videoTracks.first {
+//            localVideoTrack.isEnabled = !mute
+//
+//        }
+        self.videoTrack?.isEnabled = !mute
     }
 }
 
@@ -232,9 +245,10 @@ private extension RTCClient {
                 let videoSource: RTCVideoSource = factory.videoSource()
                 let capturer = RTCCameraVideoCapturer(delegate: videoSource)
                 self.delegate?.rtcClient(client: self, didCreateLocalCapturer: capturer)
-                let videoTrack = factory.videoTrack(with: videoSource, trackId: "ARDv0")
-                videoTrack.isEnabled = true
-                localStream.addVideoTrack(videoTrack)
+                let videoTrackLocal = factory.videoTrack(with: videoSource, trackId: "ARDv0")
+                videoTrackLocal.isEnabled = true
+                localStream.addVideoTrack(videoTrackLocal)
+                videoTrack = videoTrackLocal
             } else {
                 // show alert for video permission disabled
                 let error = NSError.init(domain: ErrorDomain.videoPermissionDenied, code: 0, userInfo: nil)
@@ -251,6 +265,7 @@ private extension RTCClient {
             let error = NSError.init(domain: ErrorDomain.audioPermissionDenied, code: 0, userInfo: nil)
             self.delegate?.rtcClient(client: self, didReceiveError: error)
         }
+        
         return localStream
     }
 
