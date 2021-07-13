@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   
 
   spec.name         = "InVC_iOS_SDK"
-  spec.version      = "0.2.0"
+  spec.version      = "1.0.0"
   spec.summary      = "A short description of InVC_iOS_SDK."
 
   
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
    spec.dependency "GoogleWebRTC"
    
-   spec.dependency "SwiftWebSocket"
+   spec.dependency "NWWebSocket"
 
 
   

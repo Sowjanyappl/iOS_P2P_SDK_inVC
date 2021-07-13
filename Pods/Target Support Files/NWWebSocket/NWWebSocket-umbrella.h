@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SwiftWebSocketVersionNumber;
-FOUNDATION_EXPORT const unsigned char SwiftWebSocketVersionString[];
+FOUNDATION_EXPORT double NWWebSocketVersionNumber;
+FOUNDATION_EXPORT const unsigned char NWWebSocketVersionString[];
 
