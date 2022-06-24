@@ -15,35 +15,36 @@
 			dependencies = (
 			);
 			name = GoogleWebRTC;
+			productName = GoogleWebRTC;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		118E15E4CDF36489FB36C52DED11FA90 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80D10E55B64D22393FDD29B27812AA /* WebSocketConnection.swift */; };
-		310C0CA67F63E302D8097ED9EF0C9CA2 /* Pods-InVC_iOS_SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EE50B3726B173528FE34A47BF282C /* Pods-InVC_iOS_SDK-dummy.m */; };
-		385601707358A31C415E7D15278F84AE /* Pods-InVC_iOS_SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B8231303A5E17AE4273FE9D7A257FB /* Pods-InVC_iOS_SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39BDCE263118D091FA7B88A62B698A2A /* NWConnection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2DAB069FC22837EBFF4B4E1E9463EC /* NWConnection+Extension.swift */; };
-		5C0698936D6F8304402AE4CA62B78F04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		748601F308758C614270F5F7A5166982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8C0AF72D95C03E32492116F9A99A5DA2 /* NWWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64DA61142E44AC8468B1EE0042D879F /* NWWebSocket-dummy.m */; };
-		A5D3CBA4E4966A77973567877BFEE840 /* NWWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E228CD9800E5760692443AACB4D842 /* NWWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEFECE3FE4F507E6088995B3D66BB63E /* NWWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D8B659E416EB1AF72F3E8AD4D502 /* NWWebSocket.swift */; };
+		3C1C09CE9084BED6F6F3A441067BE0A8 /* Pods-InVC_iOS_SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B8231303A5E17AE4273FE9D7A257FB /* Pods-InVC_iOS_SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A766724FABBB932AC89C4D6A818C1C /* Pods-InVC_iOS_SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EE50B3726B173528FE34A47BF282C /* Pods-InVC_iOS_SDK-dummy.m */; };
+		72D7EF7CCF7D3E6F0C27023991F8A077 /* NWWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D8B659E416EB1AF72F3E8AD4D502 /* NWWebSocket.swift */; };
+		A7830473472B2037C01BF4DE681D856B /* NWWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E228CD9800E5760692443AACB4D842 /* NWWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B593DE4C2482BF88B2DE291B1EF91DB7 /* NWWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64DA61142E44AC8468B1EE0042D879F /* NWWebSocket-dummy.m */; };
+		B73074FCD1AB2D6CBB9974321A5D7AC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4559AD0C77ABFE2EB0460F544D8F201 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80D10E55B64D22393FDD29B27812AA /* WebSocketConnection.swift */; };
+		CEF9946EC9F70BB506ECCC9CDE05C7AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D2902E2E286B3393B56E1835F8E4312A /* NWConnection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2DAB069FC22837EBFF4B4E1E9463EC /* NWConnection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3473AD72C2E28F8F4BDADD580206212B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C8677E8CA51138111F0D17125A79694;
-			remoteInfo = NWWebSocket;
-		};
-		F1DE871F9F3200F968445857EF3BBDEE /* PBXContainerItemProxy */ = {
+		180CEB692361094318FC6854F9AB3E66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EC23BFCFC44D9224C054485B54824B8E;
 			remoteInfo = GoogleWebRTC;
+		};
+		F50600EF79036F734F0FED58CCE4E7C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8677E8CA51138111F0D17125A79694;
+			remoteInfo = NWWebSocket;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,15 +59,15 @@
 		6A7630A55C071C47C5584264B5FB0589 /* NWWebSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWWebSocket.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F0EE50B3726B173528FE34A47BF282C /* Pods-InVC_iOS_SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InVC_iOS_SDK-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A58B5EEB2379F7717A141100AE91DE72 /* Pods_InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InVC_iOS_SDK.framework; path = "Pods-InVC_iOS_SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A58B5EEB2379F7717A141100AE91DE72 /* Pods-InVC_iOS_SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-InVC_iOS_SDK"; path = Pods_InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6292AE415CF3F0EE620886D2994A08C /* GoogleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.debug.xcconfig; sourceTree = "<group>"; };
 		A64DA61142E44AC8468B1EE0042D879F /* NWWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NWWebSocket-dummy.m"; sourceTree = "<group>"; };
 		AAEFBEB8AB765D51EEAEFBA4984EC7E7 /* Pods-InVC_iOS_SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InVC_iOS_SDK-Info.plist"; sourceTree = "<group>"; };
 		CD510B41F551671E9FC74844A9DB3CD5 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		D4B8231303A5E17AE4273FE9D7A257FB /* Pods-InVC_iOS_SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InVC_iOS_SDK-umbrella.h"; sourceTree = "<group>"; };
 		DD06FF2BE6D0CF79E19C249C6C4AA1EE /* GoogleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.release.xcconfig; sourceTree = "<group>"; };
-		E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NWWebSocket.framework; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D99CAB406DFB1FC185D9CD801A774 /* Pods-InVC_iOS_SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InVC_iOS_SDK.modulemap"; sourceTree = "<group>"; };
 		F741D8B659E416EB1AF72F3E8AD4D502 /* NWWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NWWebSocket.swift; path = Sources/NWWebSocket/Model/Client/NWWebSocket.swift; sourceTree = "<group>"; };
 		F9930A8FAE35E31E09232B0D4E9B5F0D /* NWWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWWebSocket-prefix.pch"; sourceTree = "<group>"; };
@@ -76,19 +77,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		023E588AAA85542CA830D00F7D221197 /* Frameworks */ = {
+		097372DD02CE0031CD7103418237FC9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748601F308758C614270F5F7A5166982 /* Foundation.framework in Frameworks */,
+				B73074FCD1AB2D6CBB9974321A5D7AC5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD978AD5853F209D6C8B6819C812CC3E /* Frameworks */ = {
+		C567F99B5BC214D1131F271EFD062ADB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C0698936D6F8304402AE4CA62B78F04 /* Foundation.framework in Frameworks */,
+				CEF9946EC9F70BB506ECCC9CDE05C7AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,17 +119,7 @@
 				1E80D10E55B64D22393FDD29B27812AA /* WebSocketConnection.swift */,
 				02080740B3FBC3161D948799918BF2F5 /* Support Files */,
 			);
-			name = NWWebSocket;
 			path = NWWebSocket;
-			sourceTree = "<group>";
-		};
-		28F2AFEF943DB1AED5B9C74BBCA4F59A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */,
-				A58B5EEB2379F7717A141100AE91DE72 /* Pods_InVC_iOS_SDK.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3257A37049B6CB74B1468F87D607DFF2 /* Frameworks */ = {
@@ -190,13 +181,22 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CD71345D8621F24CE08E9FF5108085BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */,
+				A58B5EEB2379F7717A141100AE91DE72 /* Pods-InVC_iOS_SDK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				358B39CE4F1EBA30640E925635DA62D5 /* Pods */,
-				28F2AFEF943DB1AED5B9C74BBCA4F59A /* Products */,
+				CD71345D8621F24CE08E9FF5108085BE /* Products */,
 				8145512ADE94762727C3B12C4C473620 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -215,26 +215,25 @@
 				3257A37049B6CB74B1468F87D607DFF2 /* Frameworks */,
 				4CCAB5DE295492AA8962162E7A0E82C7 /* Support Files */,
 			);
-			name = GoogleWebRTC;
 			path = GoogleWebRTC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4F3FECD34178F335FB1932A0B3F95CEE /* Headers */ = {
+		C2D9297991D076ECA48493E092AECDDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385601707358A31C415E7D15278F84AE /* Pods-InVC_iOS_SDK-umbrella.h in Headers */,
+				A7830473472B2037C01BF4DE681D856B /* NWWebSocket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F33FF7CD1901393E45A2A3AB0DF6BED4 /* Headers */ = {
+		C7D0DBD9CDAC155A5AFF505C3A3AA08A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D3CBA4E4966A77973567877BFEE840 /* NWWebSocket-umbrella.h in Headers */,
+				3C1C09CE9084BED6F6F3A441067BE0A8 /* Pods-InVC_iOS_SDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,12 +242,12 @@
 /* Begin PBXNativeTarget section */
 		1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5313DADD66141B5D4AD5E3EC81EA25D /* Build configuration list for PBXNativeTarget "NWWebSocket" */;
+			buildConfigurationList = 5B193A798A9FC382FAE395E8B2C1C77F /* Build configuration list for PBXNativeTarget "NWWebSocket" */;
 			buildPhases = (
-				F33FF7CD1901393E45A2A3AB0DF6BED4 /* Headers */,
-				EABC1551041BEC450C4920352873BA2B /* Sources */,
-				CD978AD5853F209D6C8B6819C812CC3E /* Frameworks */,
-				6BF906D08EB57E6F98C58232184289C2 /* Resources */,
+				C2D9297991D076ECA48493E092AECDDF /* Headers */,
+				C63368ABA479A23806B70D03C887D7E7 /* Sources */,
+				C567F99B5BC214D1131F271EFD062ADB /* Frameworks */,
+				2F60C008F5830F822A86E3D901A35124 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -261,22 +260,22 @@
 		};
 		7DCAEA667E9FE7303FD42B9BDC04D74B /* Pods-InVC_iOS_SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C28179FEF0F4DD754164AEDD0366D2E /* Build configuration list for PBXNativeTarget "Pods-InVC_iOS_SDK" */;
+			buildConfigurationList = 87C6AA5776D67EF912E4BB0897255064 /* Build configuration list for PBXNativeTarget "Pods-InVC_iOS_SDK" */;
 			buildPhases = (
-				4F3FECD34178F335FB1932A0B3F95CEE /* Headers */,
-				4C3629DE745605EC24C5E0A3773CAB37 /* Sources */,
-				023E588AAA85542CA830D00F7D221197 /* Frameworks */,
-				1D01CE30AFD10242E582A8C42C33FEAB /* Resources */,
+				C7D0DBD9CDAC155A5AFF505C3A3AA08A /* Headers */,
+				0C992CE090E745E879699C5F06D65476 /* Sources */,
+				097372DD02CE0031CD7103418237FC9F /* Frameworks */,
+				B7D93276BA671B7EEDEB5FD127231300 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB95258E91024039807708E64BAE629F /* PBXTargetDependency */,
-				65FAC60EFDBB64A249635C67A533E400 /* PBXTargetDependency */,
+				C33861ACA5DCEB15EAC9419EEE0A4FB9 /* PBXTargetDependency */,
+				C2D7D02B3A0DF7C29FD8A77E1E05B8E2 /* PBXTargetDependency */,
 			);
 			name = "Pods-InVC_iOS_SDK";
-			productName = "Pods-InVC_iOS_SDK";
-			productReference = A58B5EEB2379F7717A141100AE91DE72 /* Pods_InVC_iOS_SDK.framework */;
+			productName = Pods_InVC_iOS_SDK;
+			productReference = A58B5EEB2379F7717A141100AE91DE72 /* Pods-InVC_iOS_SDK */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,19 +284,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 28F2AFEF943DB1AED5B9C74BBCA4F59A /* Products */;
+			productRefGroup = CD71345D8621F24CE08E9FF5108085BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -309,14 +308,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D01CE30AFD10242E582A8C42C33FEAB /* Resources */ = {
+		2F60C008F5830F822A86E3D901A35124 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BF906D08EB57E6F98C58232184289C2 /* Resources */ = {
+		B7D93276BA671B7EEDEB5FD127231300 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,78 +325,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C3629DE745605EC24C5E0A3773CAB37 /* Sources */ = {
+		0C992CE090E745E879699C5F06D65476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310C0CA67F63E302D8097ED9EF0C9CA2 /* Pods-InVC_iOS_SDK-dummy.m in Sources */,
+				50A766724FABBB932AC89C4D6A818C1C /* Pods-InVC_iOS_SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EABC1551041BEC450C4920352873BA2B /* Sources */ = {
+		C63368ABA479A23806B70D03C887D7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BDCE263118D091FA7B88A62B698A2A /* NWConnection+Extension.swift in Sources */,
-				8C0AF72D95C03E32492116F9A99A5DA2 /* NWWebSocket-dummy.m in Sources */,
-				EEFECE3FE4F507E6088995B3D66BB63E /* NWWebSocket.swift in Sources */,
-				118E15E4CDF36489FB36C52DED11FA90 /* WebSocketConnection.swift in Sources */,
+				D2902E2E286B3393B56E1835F8E4312A /* NWConnection+Extension.swift in Sources */,
+				72D7EF7CCF7D3E6F0C27023991F8A077 /* NWWebSocket.swift in Sources */,
+				B593DE4C2482BF88B2DE291B1EF91DB7 /* NWWebSocket-dummy.m in Sources */,
+				C4559AD0C77ABFE2EB0460F544D8F201 /* WebSocketConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		65FAC60EFDBB64A249635C67A533E400 /* PBXTargetDependency */ = {
+		C2D7D02B3A0DF7C29FD8A77E1E05B8E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NWWebSocket;
 			target = 1C8677E8CA51138111F0D17125A79694 /* NWWebSocket */;
-			targetProxy = 3473AD72C2E28F8F4BDADD580206212B /* PBXContainerItemProxy */;
+			targetProxy = F50600EF79036F734F0FED58CCE4E7C6 /* PBXContainerItemProxy */;
 		};
-		BB95258E91024039807708E64BAE629F /* PBXTargetDependency */ = {
+		C33861ACA5DCEB15EAC9419EEE0A4FB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleWebRTC;
 			target = EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */;
-			targetProxy = F1DE871F9F3200F968445857EF3BBDEE /* PBXContainerItemProxy */;
+			targetProxy = 180CEB692361094318FC6854F9AB3E66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1046EBA7723109D28DB2241344FFC9F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A7630A55C071C47C5584264B5FB0589 /* NWWebSocket.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
-				PRODUCT_MODULE_NAME = NWWebSocket;
-				PRODUCT_NAME = NWWebSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,10 +428,11 @@
 			};
 			name = Debug;
 		};
-		5CB2EB805C5B5B01D2930D284E8A8934 /* Release */ = {
+		2D92FA42AEA1E7960A42BA1EAA5F6A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28647386B2B7D75628A2F2198B2097CC /* NWWebSocket.release.xcconfig */;
+			baseConfigurationReference = 65FEAED4B15AD356761F2FC7BF93A20D /* Pods-InVC_iOS_SDK.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -477,30 +442,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
-				PRODUCT_MODULE_NAME = NWWebSocket;
-				PRODUCT_NAME = NWWebSocket;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		7C9639528B672E34BAC1E9D15816A26A /* Release */ = {
+		3F8F693B604087148CE734548D69B8BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 395E8A494D142430EBC031843B650945 /* Pods-InVC_iOS_SDK.release.xcconfig */;
 			buildSettings = {
@@ -607,6 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -618,11 +584,10 @@
 			};
 			name = Release;
 		};
-		CC2CA2D3DFCC50EECDF2F0FBF827770E /* Debug */ = {
+		B91DC8C5A13368D0AED636E4FD71001C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65FEAED4B15AD356761F2FC7BF93A20D /* Pods-InVC_iOS_SDK.debug.xcconfig */;
+			baseConfigurationReference = 28647386B2B7D75628A2F2198B2097CC /* NWWebSocket.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -632,23 +597,60 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK-Info.plist";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
+				PRODUCT_MODULE_NAME = NWWebSocket;
+				PRODUCT_NAME = NWWebSocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C589C3B4D16FBA4AD91CC0E824C9F7FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7630A55C071C47C5584264B5FB0589 /* NWWebSocket.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NWWebSocket/NWWebSocket.modulemap";
+				PRODUCT_MODULE_NAME = NWWebSocket;
+				PRODUCT_NAME = NWWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -662,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -684,15 +687,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C28179FEF0F4DD754164AEDD0366D2E /* Build configuration list for PBXNativeTarget "Pods-InVC_iOS_SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC2CA2D3DFCC50EECDF2F0FBF827770E /* Debug */,
-				7C9639528B672E34BAC1E9D15816A26A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -702,11 +696,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5313DADD66141B5D4AD5E3EC81EA25D /* Build configuration list for PBXNativeTarget "NWWebSocket" */ = {
+		5B193A798A9FC382FAE395E8B2C1C77F /* Build configuration list for PBXNativeTarget "NWWebSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1046EBA7723109D28DB2241344FFC9F2 /* Debug */,
-				5CB2EB805C5B5B01D2930D284E8A8934 /* Release */,
+				C589C3B4D16FBA4AD91CC0E824C9F7FD /* Debug */,
+				B91DC8C5A13368D0AED636E4FD71001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C6AA5776D67EF912E4BB0897255064 /* Build configuration list for PBXNativeTarget "Pods-InVC_iOS_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D92FA42AEA1E7960A42BA1EAA5F6A26 /* Debug */,
+				3F8F693B604087148CE734548D69B8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

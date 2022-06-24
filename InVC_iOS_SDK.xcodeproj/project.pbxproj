@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134EFDCB28658D7000927B35 /* SingleTonSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134EFDCA28658D7000927B35 /* SingleTonSocket.swift */; };
 		C2E9F72B2636D1E000F9A082 /* InVC_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2E9F7452636EB1100F9A082 /* RTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7402636EB1100F9A082 /* RTCClient.swift */; };
 		C2E9F7462636EB1100F9A082 /* RTCSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9F7412636EB1100F9A082 /* RTCSettingsStore.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		134EFDCA28658D7000927B35 /* SingleTonSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTonSocket.swift; sourceTree = "<group>"; };
 		90B87A584E1AB21B1892946F /* Pods-InVC_iOS_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InVC_iOS_SDK.debug.xcconfig"; path = "Target Support Files/Pods-InVC_iOS_SDK/Pods-InVC_iOS_SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9F7262636D1E000F9A082 /* InVC_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9F7292636D1E000F9A082 /* InVC_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InVC_iOS_SDK.h; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				C2E9F7422636EB1100F9A082 /* RTCCapturerSettingsModel.swift */,
 				C2E9F7402636EB1100F9A082 /* RTCClient.swift */,
 				C2E9F7412636EB1100F9A082 /* RTCSettingsStore.swift */,
+				134EFDCA28658D7000927B35 /* SingleTonSocket.swift */,
 				C2E9F72A2636D1E000F9A082 /* Info.plist */,
 			);
 			path = InVC_iOS_SDK;
@@ -200,6 +203,7 @@
 				C2E9F7462636EB1100F9A082 /* RTCSettingsStore.swift in Sources */,
 				C2E9F7492636EB1100F9A082 /* AVCaptureState.swift in Sources */,
 				C2E9F7452636EB1100F9A082 /* RTCClient.swift in Sources */,
+				134EFDCB28658D7000927B35 /* SingleTonSocket.swift in Sources */,
 				C2E9F7482636EB1100F9A082 /* RTCCapturer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +344,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InVC_iOS_SDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +372,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InVC_iOS_SDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
