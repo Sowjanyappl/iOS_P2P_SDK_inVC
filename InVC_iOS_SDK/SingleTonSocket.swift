@@ -23,6 +23,8 @@ public protocol SocketDelegates: AnyObject {
     func sendLocalVideoTrack(localVideoTrack:RTCVideoTrack)
     func sendRemoteVideoTrack(remoteVideoTrack:RTCVideoTrack)
     func sendOffer(dict:[String:Any])
+    func sendMessage(dict:[String:Any])
+
 }
 
 public class SingleTonSocket {
@@ -221,6 +223,7 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     break
                 case "message":
                     print("message printed")
+                    socketDelegate?.sendMessage(dict: dictionary)
                     break
                 case "offer":
                     socketDelegate?.sendOffer(dict:dictionary)
