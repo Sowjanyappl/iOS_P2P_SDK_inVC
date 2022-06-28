@@ -24,16 +24,16 @@ import WebRTC
 
     
     
-    @objc optional func startIncomingCall(dict:[String:Any])
-    @objc optional func declineIncomingCall(dict:[String:Any])
-    @objc optional func acceptIncomingCall(dict:[String:Any])
-    @objc optional func endVCCall(dict:[String:Any])
+    @objc optional func startIncomingCall(rid:String, isAudioCall:Bool)
+    @objc optional func declineIncomingCall()
+    @objc optional func acceptIncomingCall()
+    @objc optional func endVCCall()
 
     
-    @objc optional func sendOffer(dict:[String:Any])
+    @objc optional func sendOffer(sdpData:String)
 
     
-    @objc optional func messageRecived(dict:[String:Any])
+    @objc optional func messageRecived(message:String, id:String)
 
     
     
@@ -253,10 +253,15 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     break
                 case "message":
                     print("message printed")
-                    socketDelegate?.messageRecived?(dict:dictionary)
+                    if let message = dictionary["message"] as? String, let id = dictionary["id"] as? String  {
+                        socketDelegate?.messageRecived?(message:message, id:id)
+                    }
                     break
                 case "offer":
-                    socketDelegate?.sendOffer?(dict:dictionary)
+                    if let sdpData = dictionary["sdp"] as? String {
+                        socketDelegate?.sendOffer?(sdpData: sdpData)
+
+                    }
                     
                 break
                 case "answer":
@@ -268,17 +273,20 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                 break
                 case "call-accepted":
                     print("Call accepted")
-                    socketDelegate?.acceptIncomingCall?(dict: dictionary)
+                    socketDelegate?.acceptIncomingCall?()
 
                     break
                 case "call-declined":
                     print("Call Declined")
-                    socketDelegate?.declineIncomingCall?(dict: dictionary)
+                    socketDelegate?.declineIncomingCall?()
 
                     break
                 case "call-initiated":
                     print("Call initiated")
-                    socketDelegate?.startIncomingCall?(dict: dictionary)
+                    if let remoteId = dictionary["id"] as? String, let isAudioCall = dictionary["isAudioCall"] as? Bool{
+                        socketDelegate?.startIncomingCall?(rid:remoteId, isAudioCall:isAudioCall)
+
+                    }
                     break
                 case "candidate":
                     
@@ -293,7 +301,7 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                 break
                 case "bye" :
 
-                    socketDelegate?.endVCCall?(dict: dictionary)
+                    socketDelegate?.endVCCall?()
                     self.videoClient?.disconnect()
 
                 break
