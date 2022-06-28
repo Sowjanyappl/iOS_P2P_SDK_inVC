@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   
 
   spec.name         = "InVC_iOS_SDK"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A short description of InVC_iOS_SDK."
 
   

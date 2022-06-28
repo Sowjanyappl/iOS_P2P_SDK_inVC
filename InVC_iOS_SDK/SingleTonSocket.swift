@@ -43,7 +43,7 @@ import WebRTC
 public class SingleTonSocket {
    public static let shared = SingleTonSocket()
     var mySocket : NWWebSocket!
-    weak var socketDelegate: SocketDelegates?
+    public weak var socketDelegate: SocketDelegates?
     var myUserId : String?
     typealias JSONDictionary = [String : Any]
 
