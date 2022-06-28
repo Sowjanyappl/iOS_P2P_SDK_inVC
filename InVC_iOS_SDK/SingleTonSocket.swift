@@ -17,19 +17,33 @@ import Foundation
 import NWWebSocket
 import Network
 import WebRTC
-public protocol SocketDelegates: AnyObject {
-    func socketConnected(isConnected: Bool)
-    func callInitaitedNotif(dict:[String:Any])
-    func sendLocalVideoTrack(localVideoTrack:RTCVideoTrack)
-    func sendRemoteVideoTrack(remoteVideoTrack:RTCVideoTrack)
-    func sendOffer(dict:[String:Any])
+@objc protocol SocketDelegates: AnyObject {
+    @objc optional  func socketConnected(isConnected: Bool)
+    @objc optional  func sendLocalVideoTrack(localVideoTrack:RTCVideoTrack)
+    @objc optional  func sendRemoteVideoTrack(remoteVideoTrack:RTCVideoTrack)
+
+    
+    
+    @objc optional func startIncomingCall(dict:[String:Any])
+    @objc optional func declineIncomingCall(dict:[String:Any])
+    @objc optional func acceptIncomingCall(dict:[String:Any])
+    @objc optional func endVCCall(dict:[String:Any])
+
+    
+    @objc optional func sendOffer(dict:[String:Any])
+
+    
+    @objc optional func messageRecived(dict:[String:Any])
+
+    
+    
 
 }
 
 public class SingleTonSocket {
    public static let shared = SingleTonSocket()
     var mySocket : NWWebSocket!
-    public weak var socketDelegate: SocketDelegates?
+    weak var socketDelegate: SocketDelegates?
     var myUserId : String?
     typealias JSONDictionary = [String : Any]
 
@@ -101,6 +115,23 @@ public class SingleTonSocket {
             }
         }
         
+        
+       
+        
+    }
+    public func callIntiated(rid:String, isAudioCall:Bool){
+        let dict: JSONDictionary = ["type": "call-initiated", "id": rid, "isAudioCall": isAudioCall]
+        self.sendSocketMessage(dict: dict)
+    }
+    public func callDeclined(rid:String) {
+        let dict: JSONDictionary = ["type": "call-declined", "id": rid]
+        self.sendSocketMessage(dict: dict)
+
+    }
+    public func callAccepted(rid:String) {
+        let dict: JSONDictionary = ["type": "call-accepted", "id": rid]
+        self.sendSocketMessage(dict: dict)
+
     }
     public func createAnswerForOffer(sdpData:String) {
         self.sdpType = "answer"
@@ -137,7 +168,7 @@ extension SingleTonSocket: RTCClientDelegate {
         print("localVideoTrack,\(localVideoTrack)")
         if !isAudioCall {
            // localVideoTrack.add(localVideoView)
-            socketDelegate?.sendLocalVideoTrack(localVideoTrack: localVideoTrack)
+            socketDelegate?.sendLocalVideoTrack?(localVideoTrack: localVideoTrack)
         }
     }
     public func rtcClient(client: RTCClient, startCallWithSdp sdp: String) {
@@ -165,7 +196,7 @@ extension SingleTonSocket: RTCClientDelegate {
     public func rtcClient(client : RTCClient, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack) {
         // Use remoteVideoTrack generated for rendering stream to remoteVideoView
         if !isAudioCall {
-            socketDelegate?.sendRemoteVideoTrack(remoteVideoTrack: remoteVideoTrack)
+            socketDelegate?.sendRemoteVideoTrack?(remoteVideoTrack: remoteVideoTrack)
         }
     }
     public func rtcClient(client : RTCClient, didReceiveError error: Error)
@@ -218,14 +249,14 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     break
                 case "hello":
                     print("hello printed")
-                    socketDelegate?.socketConnected(isConnected: true)
+                    socketDelegate?.socketConnected?(isConnected: true)
                     break
                 case "message":
                     print("message printed")
-                    socketDelegate?.callInitaitedNotif(dict:dictionary)
+                    socketDelegate?.messageRecived?(dict:dictionary)
                     break
                 case "offer":
-                    socketDelegate?.sendOffer(dict:dictionary)
+                    socketDelegate?.sendOffer?(dict:dictionary)
                     
                 break
                 case "answer":
@@ -237,17 +268,17 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                 break
                 case "call-accepted":
                     print("Call accepted")
-                    socketDelegate?.callInitaitedNotif(dict:dictionary)
+                    socketDelegate?.acceptIncomingCall?(dict: dictionary)
 
                     break
                 case "call-declined":
                     print("Call Declined")
-                    socketDelegate?.callInitaitedNotif(dict:dictionary)
+                    socketDelegate?.declineIncomingCall?(dict: dictionary)
 
                     break
                 case "call-initiated":
                     print("Call initiated")
-                    socketDelegate?.callInitaitedNotif(dict:dictionary)
+                    socketDelegate?.startIncomingCall?(dict: dictionary)
                     break
                 case "candidate":
                     
@@ -262,7 +293,7 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                 break
                 case "bye" :
 
-                    socketDelegate?.callInitaitedNotif(dict:dictionary)
+                    socketDelegate?.endVCCall?(dict: dictionary)
                     self.videoClient?.disconnect()
 
                 break

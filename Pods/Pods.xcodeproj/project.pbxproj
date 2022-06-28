@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = GoogleWebRTC;
-			productName = GoogleWebRTC;
 		};
 /* End PBXAggregateTarget section */
 
@@ -59,7 +58,7 @@
 		6A7630A55C071C47C5584264B5FB0589 /* NWWebSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWWebSocket.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F0EE50B3726B173528FE34A47BF282C /* Pods-InVC_iOS_SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InVC_iOS_SDK-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A58B5EEB2379F7717A141100AE91DE72 /* Pods-InVC_iOS_SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-InVC_iOS_SDK"; path = Pods_InVC_iOS_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6292AE415CF3F0EE620886D2994A08C /* GoogleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.debug.xcconfig; sourceTree = "<group>"; };
 		A64DA61142E44AC8468B1EE0042D879F /* NWWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NWWebSocket-dummy.m"; sourceTree = "<group>"; };
@@ -67,7 +66,7 @@
 		CD510B41F551671E9FC74844A9DB3CD5 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		D4B8231303A5E17AE4273FE9D7A257FB /* Pods-InVC_iOS_SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InVC_iOS_SDK-umbrella.h"; sourceTree = "<group>"; };
 		DD06FF2BE6D0CF79E19C249C6C4AA1EE /* GoogleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.release.xcconfig; sourceTree = "<group>"; };
-		E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NWWebSocket; path = NWWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D99CAB406DFB1FC185D9CD801A774 /* Pods-InVC_iOS_SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InVC_iOS_SDK.modulemap"; sourceTree = "<group>"; };
 		F741D8B659E416EB1AF72F3E8AD4D502 /* NWWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NWWebSocket.swift; path = Sources/NWWebSocket/Model/Client/NWWebSocket.swift; sourceTree = "<group>"; };
 		F9930A8FAE35E31E09232B0D4E9B5F0D /* NWWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWWebSocket-prefix.pch"; sourceTree = "<group>"; };
@@ -119,6 +118,7 @@
 				1E80D10E55B64D22393FDD29B27812AA /* WebSocketConnection.swift */,
 				02080740B3FBC3161D948799918BF2F5 /* Support Files */,
 			);
+			name = NWWebSocket;
 			path = NWWebSocket;
 			sourceTree = "<group>";
 		};
@@ -184,7 +184,7 @@
 		CD71345D8621F24CE08E9FF5108085BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */,
+				E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket */,
 				A58B5EEB2379F7717A141100AE91DE72 /* Pods-InVC_iOS_SDK */,
 			);
 			name = Products;
@@ -215,6 +215,7 @@
 				3257A37049B6CB74B1468F87D607DFF2 /* Frameworks */,
 				4CCAB5DE295492AA8962162E7A0E82C7 /* Support Files */,
 			);
+			name = GoogleWebRTC;
 			path = GoogleWebRTC;
 			sourceTree = "<group>";
 		};
@@ -255,7 +256,7 @@
 			);
 			name = NWWebSocket;
 			productName = NWWebSocket;
-			productReference = E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket.framework */;
+			productReference = E7192481BB5D3F04E8A606F149CD8E9D /* NWWebSocket */;
 			productType = "com.apple.product-type.framework";
 		};
 		7DCAEA667E9FE7303FD42B9BDC04D74B /* Pods-InVC_iOS_SDK */ = {
@@ -572,7 +573,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,7 +597,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -634,7 +633,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NWWebSocket/NWWebSocket-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NWWebSocket/NWWebSocket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -664,7 +662,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
