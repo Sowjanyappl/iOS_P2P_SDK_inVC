@@ -17,7 +17,7 @@ import Foundation
 import NWWebSocket
 import Network
 import WebRTC
-@objc protocol SocketDelegates: AnyObject {
+@objc public protocol SocketDelegates: AnyObject {
     @objc optional  func socketConnected(isConnected: Bool)
     @objc optional  func sendLocalVideoTrack(localVideoTrack:RTCVideoTrack)
     @objc optional  func sendRemoteVideoTrack(remoteVideoTrack:RTCVideoTrack)
