@@ -35,7 +35,7 @@ import WebRTC
     
     @objc optional func messageRecived(message:String, id:String)
 
-    
+
     
 
 }
@@ -133,6 +133,17 @@ public class SingleTonSocket {
         self.sendSocketMessage(dict: dict)
 
     }
+    public func messageSend(message:String, id:String){
+        let dict: JSONDictionary = ["type": "message", "message": message, "id": id]
+        self.sendSocketMessage(dict: dict)
+
+    }
+    
+    public func sendEndVC(rId:String){
+        let messageDict: JSONDictionary = ["type":"bye","id": rId]
+        self.sendSocketMessage(dict: messageDict)
+
+    }
     public func createAnswerForOffer(sdpData:String) {
         self.sdpType = "answer"
         self.videoClient?.createAnswerForOfferReceived(withRemoteSDP:sdpData)
@@ -148,6 +159,7 @@ public class SingleTonSocket {
     public func switchCamera() {
         self.captureController.switchCamera()
     }
+    
 }
 
 extension SingleTonSocket: RTCClientDelegate {
