@@ -25,7 +25,7 @@ import WebRTC
     
     
     @objc optional func startIncomingCall(rid:String, isAudioCall:Bool)
-    @objc optional func declineIncomingCall()
+    @objc optional func declineIncomingCall(rId:String)
     @objc optional func acceptIncomingCall()
     @objc optional func endVCCall()
 
@@ -278,7 +278,10 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     break
                 case "call-declined":
                     print("Call Declined")
-                    socketDelegate?.declineIncomingCall?()
+                    if let remoteId = dictionary["id"] as? String{
+                        socketDelegate?.declineIncomingCall?(rId: remoteId)
+
+                    }
 
                     break
                 case "call-initiated":
