@@ -34,7 +34,7 @@ import WebRTC
 
     
     @objc optional func messageRecived(message:String, id:String)
-
+    @objc optional func videoMuted()
 
     
 
@@ -152,8 +152,10 @@ public class SingleTonSocket {
         self.videoClient?.muteCall(isMuted)
 
     }
-    public func muteVideoCamera(isMuted:Bool) {
+    public func muteVideoCamera(isMuted:Bool, rid:String) {
         self.videoClient?.muteVideoCall(isMuted)
+        let messageDict: JSONDictionary = ["type":"video-muted","id": rid, "isVideoMute": isMuted]
+        self.sendSocketMessage(dict: messageDict)
 
     }
     public func switchCamera() {
@@ -314,6 +316,9 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                         self.videoClient?.addIceCandidate(iceCandidate: rtcIceCandidate)
                     }
                 break
+                case "video-muted":
+                    socketDelegate?.videoMuted?()
+                    break
                 case "bye" :
 
                     socketDelegate?.endVCCall?()
