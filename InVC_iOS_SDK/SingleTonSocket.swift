@@ -34,7 +34,7 @@ import WebRTC
 
     
     @objc optional func messageRecived(message:String, id:String)
-    @objc optional func videoMuted()
+    @objc optional func videoMuted(isMuted:Bool)
 
     
 
@@ -317,7 +317,10 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     }
                 break
                 case "video-muted":
-                    socketDelegate?.videoMuted?()
+                    if let isMuted = dictionary["isMuted"] as? Bool {
+                        socketDelegate?.videoMuted?(isMuted:isMuted)
+
+                    }
                     break
                 case "bye" :
 
