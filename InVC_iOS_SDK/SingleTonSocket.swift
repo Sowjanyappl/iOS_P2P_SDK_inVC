@@ -140,6 +140,7 @@ public class SingleTonSocket {
     }
     
     public func sendEndVC(rId:String){
+        self.videoClient?.disconnect()
         let messageDict: JSONDictionary = ["type":"bye","id": rId]
         self.sendSocketMessage(dict: messageDict)
 
