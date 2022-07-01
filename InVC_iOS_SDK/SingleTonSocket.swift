@@ -317,7 +317,7 @@ extension SingleTonSocket : WebSocketConnectionDelegate {
                     }
                 break
                 case "video-muted":
-                    if let isMuted = dictionary["isMuted"] as? Bool {
+                    if let isMuted = dictionary["isVideoMute"] as? Bool {
                         socketDelegate?.videoMuted?(isMuted:isMuted)
 
                     }
